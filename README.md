@@ -1,95 +1,19 @@
-title: "Data Visualization in Python (Exploratory & Analytical Insights)"
-description: >
-  Transforming datasets into actionable insights through exploratory data analysis (EDA)
-  and analytical visualization using Python’s scientific ecosystem. This repository
-  demonstrates dataset cleaning, exploration, and visualization for statistical and business use cases.
+# 📊 Data Visualization in Python — End-to-End Analytical Project  
+This repository contains a complete end-to-end data visualization project showcasing how raw datasets can be transformed into analytical insights using Python. The project focuses on cleaning data, performing exploratory data analysis (EDA), computing descriptive statistics, and generating visual outputs that reveal trends, distributions, relationships, and correlations within the dataset. The workflow is implemented through a reproducible Jupyter Notebook that demonstrates modern data visualization techniques relevant for data science, research, and business intelligence applications.
 
-overview:
-  purpose:
-    - exploratory_data_analysis
-    - data_visualization
-    - reporting_and_insight_generation
-  intended_audience:
-    - data_analysts
-    - researchers
-    - business_analysts
-    - financial_analysts
-    - students
+The project begins by importing one or more structured datasets (CSV/XLSX) into Pandas DataFrames. The notebook performs initial inspections (shape, datatypes, missing values, outliers), followed by preprocessing steps such as imputing missing values, converting data types, standardizing column formats, and filtering invalid entries. Once the dataset is prepared, exploratory analysis is conducted to understand statistical properties through summary metrics including mean, median, mode, variance, standard deviation, skewness, and kurtosis, enabling a strong numerical understanding of the dataset prior to visualization.
 
-techniques_applied:
-  - exploratory_data_analysis (EDA)
-  - univariate_visualization
-  - multivariate_visualization
-  - time_series_visualization (optional)
-  - correlation_analysis
-  - interactive_visualization (optional)
+Visual analytics form the core of the notebook. Using Matplotlib and Seaborn, the project generates multiple forms of statistical and comparative charts including histograms to study distributions, box and violin plots to analyze spread and outliers, bar and line charts for temporal or categorical trends, correlation heatmaps to evaluate variable relationships, scatterplots for bivariate dependencies, pairplots for multivariate pattern detection, and density plots for continuous variable profiling. Optional Plotly integration adds interactive support enabling zooming, filtering, and hovering controls for enhanced exploratory workflows, making the notebook suitable for web-based dashboards or BI applications.
 
-tech_stack:
-  programming_language: "Python"
-  environment: "Jupyter Notebook"
-  libraries:
-    data_handling:
-      - pandas
-      - numpy
-    visualization:
-      - matplotlib
-      - seaborn
-      - plotly (optional)
+From a project standpoint, this repository is structured for clarity and reuse. The `datasets/` directory stores raw or updated data files, while `outputs/` contains exported charts and visual reports for documentation or presentation purposes. The core notebook (`Data Visualisation.ipynb`) documents all transformation and visualization steps with code and inline explanations so analysts can reproduce the workflow. Users can update or replace datasets without modifying logic, provided schema compatibility is maintained, which makes the project adaptable for multiple domains including finance, automotive, healthcare, marketing, policy research, or academic coursework.
 
-repository_structure:
-  directories:
-    datasets: "Raw or cleaned datasets"
-    notebooks: "Jupyter notebooks for visualization"
-    outputs: "Exported charts and visual artifacts"
-    scripts: "Reusable visualization scripts (optional)"
-  main_files:
-    - "notebooks/Data Visualisation.ipynb"
-    - "README.md"
+This project is valuable for students learning EDA, analysts conducting reporting work, researchers validating hypotheses, and business teams requiring visualization for decision support. The repository demonstrates how visualization can uncover insights not visible in raw tables, such as hidden correlations, group-level differences, seasonality effects, and distribution anomalies. The workflow can easily be extended to dashboards, data pipelines, or statistical modeling projects.
 
-methodology:
-  steps:
-    - "Load and inspect datasets"
-    - "Clean and preprocess data (handle missing values, data types, etc.)"
-    - "Perform descriptive statistics"
-    - "Visualize distributions and trends"
-    - "Analyze correlations"
-    - "Export charts for reporting or BI use"
-
-key_insights:
-  - "Visual analytics reveals non-obvious patterns"
-  - "Correlation mapping supports decision-making"
-  - "Reproducible workflows ensure analytical transparency"
-  - "Suitable for dashboards, automation, and BI pipelines"
-
-usage:
-  run_locally:
-    clone: "git clone https://github.com/<your-username>/<repo-name>.git"
-    install_dependencies: "pip install -r requirements.txt"
-    launch_notebook: "jupyter notebook"
-    open_file: "notebooks/Data Visualisation.ipynb"
-  run_online:
-    google_colab: "Upload or link notebook from GitHub to Google Colab"
-
-dataset_usage:
-  instructions:
-    - "Place .csv or .xlsx files into datasets/ directory"
-    - "Notebook auto-updates if schema remains consistent"
-
-example_visuals:
-  output_directory: "outputs/"
-  files:
-    - distribution_plot.png
-    - correlation_heatmap.png
-    - category_analysis.png
-
-license:
-  options:
-    - MIT
-    - Apache-2.0
-    - GPL-3.0
-
-contributions:
-  policy: "Open for pull requests, issues, and feature suggestions"
-
-contact:
-  support: "Open issue on GitHub for queries or discussion"
+🧰 Technologies: Python, Jupyter Notebook, Pandas, NumPy, Matplotlib, Seaborn, Plotly (optional)  
+📂 Layout: datasets/ (input), notebooks/ (analysis), outputs/ (visuals), scripts/ (optional automation)  
+🚀 Execution: Clone repository → Install dependencies → Run Notebook → View or export charts  
+🎯 Deliverables: Reproducible visualization notebook + exported charts + interpretable analytical findings  
+📎 Use Cases: Data storytelling, KPI reporting, academic EDA, BI prototyping, research visualization, analytics pipelines  
+🤝 Contributions: Open for PRs, feature suggestions, and dataset extensions  
+📜 Licensing: Open license model recommended (MIT/Apache/GPL)  
+📧 Support: Open a GitHub issue for help or collaboration
